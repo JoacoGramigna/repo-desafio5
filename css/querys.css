@@ -1,0 +1,152 @@
+@media screen and (max-width: 1330px) {
+    .articulo4{
+        display: none;
+    }
+    .articulo8{
+        display: none;
+    }
+    .articulo12{
+        display: none;
+    }
+    .articulos img{
+        width: 160px;
+        height: 200px;
+    }
+    }
+
+@media screen and (max-width: 890px) {
+    .gridContainerNav {
+        grid-template-areas:
+            "logoHeader menuNavegacionPersonal menuNavegacionPersonal"
+            "logoHeader buscadorNav buscadorNav"
+            "menuNavegacionCompra menuNavegacionCompra menuNavegacionCompra";
+    }
+
+    .logoHeader img {
+        width: 160px;
+        height: 140px;
+    }
+
+    .menuNavegacionPersonal {
+        justify-content: center;
+        margin-right: 60px;
+    }
+
+    .buscadorNav {
+        justify-content: unset;
+        align-items: flex-end;
+    }
+
+    .menuNavegacionCompra {
+        padding: 10px 80px 10px 80px;
+    }
+
+    .imagen4, .imagen9{
+        display: none;
+    }
+
+    .navFooter{
+        display: grid;
+        grid-template-areas: 
+        "institucional ayuda atencionAlCliente"
+        "redesSociales redesSociales redesSociales";
+    }
+    .institucional{
+        grid-area: institucional;
+    }
+    .ayuda{
+        grid-area: ayuda;
+    }
+    .atencionAlCliente{
+        grid-area: atencionAlCliente;
+    }
+    .redesSociales{
+        grid-area: redesSociales;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .redesSociales h2{
+        display: none;
+    }
+    .botonTop{
+        justify-content: center;
+        margin: unset;
+        margin-bottom: 20px;
+    }
+    .formularioContactoDatos {
+        grid-template-areas: 
+        "datosIzquierda"
+        "datosDerecha"
+        "datosCheckbox";
+    }
+    .articulo3{
+        display: none;
+    }
+    .articulo7{
+        display: none;
+    }
+    .articulo11{
+        display: none;
+    }
+    .articulos img{
+        width: 160px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .gridContainerNav {
+        grid-template-areas:
+            "logoHeader menuNavegacionPersonal "
+            "buscadorNav buscadorNav"
+            "menuNavegacionCompra menuNavegacionCompra";
+    }
+
+    .logoHeader{
+        justify-content: center;
+    }
+
+    .buscadorNav {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .menuNavegacionPersonal {
+        margin-right: unset;
+    }
+
+    .menuNavegacionCompra {
+        padding: 10px 50px 10px 50px;
+    }
+
+    .menuNavegacionCompra a{
+        font-size: 15px;
+    }
+
+    .menuNavegacionPersonal a{
+        font-size: 16px;
+    }
+
+    .imagen3, .imagen8{
+        display: none;
+    }
+    .articulo2{
+        display: none;
+    }
+    .articulo6{
+        display: none;
+    }
+    .articulo10{
+        display: none;
+    }
+    .articulos img{
+        width: 180px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .imagen2, .imagen7{
+        display: none;
+    }
+}
