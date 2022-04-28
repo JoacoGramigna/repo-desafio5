@@ -18,105 +18,46 @@
         "footer";
 }
 
-/* HEADER */
-header {
-    width: 100%;
-    height: 100%;
-}
-
-.gridContainerNav {
-    display: grid;
-    grid-template-areas:
-        "logoHeader buscadorNav menuNavegacionPersonal"
-        "menuNavegacionCompra menuNavegacionCompra menuNavegacionCompra";
-    max-width: 100%;
-}
-
 /* Logo */
+
 .logoHeader img {
     width: 180px;
     height: 160px;
+    margin-bottom: 30px;
+    margin-top: 15px;
 }
 
 .logoHeader {
-    grid-area: logoHeader;
     display: flex;
     justify-content: center;
 }
 
-/* Buscador */
-.buscadorNav {
-    grid-area: buscadorNav;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* NavHeader */
+
+.edit-nav{
+    background-color: #FBE3D9;
 }
 
-.buscadorNav form {
-    background: #FBE3D9;
-    padding: 10px 18px 10px 18px;
-    border-radius: 20px;
-    width: 400px;
-    height: 40px;
+.dropdown-menu{
+    background-color: #FBE3D9;
 }
 
-.buscadorNav form input {
-    border: none;
-    background: transparent;
-    padding-right: 160px;
-    outline: none;
-    font-size: 14px;
+.dropdown-menu i{
+    padding-right: 10px;
 }
 
-.buscadorNav .fa-solid {
-    color: #5C5D60;
-    padding-top: 3px;
-    padding-right: 15px;
-}
-
-/*Navegacion personal*/
-.menuNavegacionPersonal {
-    grid-area: menuNavegacionPersonal;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.menuNavegacionPersonal a {
-    color: #5C5D60;
-    text-decoration: none;
-    font-size: large;
-    margin: 25px;
-}
-
-.menuNavegacionPersonal .fa-solid {
-    padding-right: 8px;
-    font-size: 20px;
-}
-
-/* Navegacion compra */
-.menuNavegacionCompra {
-    grid-area: menuNavegacionCompra;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px 160px 10px 160px;
-    background: #FBE3D9;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.menuNavegacionCompra a {
-    color: #5C5D60;
-    font-size: 20px;
-}
-
-.menuNavegacionCompra a:hover {
+.dropdown-menu a:hover{
+    background-color: transparent;
     text-decoration: underline;
 }
 
+.btn{
+    color: #5C5D60;
+    outline: 1px solid #5C5D60;
+}
+
 /* MAIN */
+
 .gridContainerMain {
     display: grid;
     grid-template-areas:
@@ -127,55 +68,62 @@ header {
 }
 
 /* Banners publicitarios */
-.seccionBannersPublicitarios {
-    grid-area: seccionBannersPublicitarios;
-    display: flex;
-    justify-content: center;
+.containerCarousel{
     margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.imagenBanner {
-    width: 95vw;
-    max-width: 1100px;
-    min-width: 400px;
-
-}
-
-.imagenBanner img {
     width: 100%;
+    height: 100%;
+}
+
+.containerCarouselImg img{
+    width: 100%;
+    height: 100%;
 }
 
 /* Exhibición aleatoria de indumentaria nueva */
-.seccionProductosNuevos {
-    grid-area: seccionProductosNuevos;
-}
-
-.tituloProductosNuevos h1 {
-    text-align: center;
+.tituloCard1{
+    margin-top: 30px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
-.articuloProductosNuevos {
+.tituloCard1 h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.containerCards1{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.articuloProductosNuevos img {
-    width: 220px;
-    height: 260px;
+.containerCards1 .card{
+    margin: 10px;
+}
+
+.containerCards1 .card:hover{
+    cursor: pointer;
+}
+
+.containerCards1 img{
+    border-bottom: 1px solid rgb(211, 211, 211);
+    width: 15rem;
+    height: 300px;
 }
 
 /* Exhibicón aleatoria de indumentaria dependiendo de la marca seleccionada */
-.seccionProductosMarcas {
-    grid-area: seccionProductosMarcas;
-}
 
-.tituloMarcas h1 {
-    text-align: center;
+.tituloCard2{
     margin-top: 30px;
     margin-bottom: 15px;
+    text-align: center;
+}
+
+.tituloCard2 h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .logosMarcas {
@@ -184,27 +132,39 @@ header {
     margin-bottom: 15px;
 }
 
-.indumentariasMarcas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.logosMarcas img:hover{
+    cursor: pointer;
 }
 
-.indumentariasMarcas img {
-    width: 220px;
-    height: 260px;
+.containerCards2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.containerCards2 .card{
+    margin: 10px;
+}
+
+.containerCards2 .card:hover{
+    cursor: pointer;
+}
+
+.containerCards2 img{
+    border-bottom: 1px solid rgb(211, 211, 211);
+    width: 15rem;
+    height: 300px;
 }
 
 /* Sección para informar sobre los medios de pago */
-.seccionPagos {
-    grid-area: seccionPagos;
-}
 
 .tituloPagos h1 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 15px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .logosPagos {
@@ -223,12 +183,21 @@ header {
 }
 
 /* Menu de navegacion Footer */
+.navFooterAcordeon{
+    display: none;
+}
+
 .navFooter {
     grid-area: navFooter;
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 15px;
     padding-top: 15px;
+}
+
+.navFooter h2{
+    color: #5C5D60;
+    font-size: 25px;
 }
 
 /* Medios institucionales */
@@ -379,71 +348,26 @@ header {
     margin-top: 30px;
 }
 
-.contacto {
+.cajaContacto{
     display: flex;
     justify-content: center;
+    max-width: 100%;
 }
 
-.formularioDatos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contacto{
     background-color: #FBE3D9;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-bottom: 40px;
 }
 
-.datosCorreo {
-    margin-bottom: 15px;
-}
-
-.datosCorreo input {
-    padding-bottom: 5px;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    background-color: transparent;
-    border-bottom: 1px solid #5C5D60;
-    width: 300px;
-}
-
-.datosContraseña {
-    margin-bottom: 15px;
-}
-
-.datosContraseña input {
-    padding-bottom: 5px;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    background-color: transparent;
-    border-bottom: 1px solid #5C5D60;
-    width: 300px;
-}
-
-.datosCheckbox {
-    margin-top: 10px;
-}
-
-.datosCheckbox a {
+.form-check-label a{
     color: #5C5D60;
-    text-decoration: underline;
 }
 
-.botonSubmit {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.botonSubmit button {
-    cursor: pointer;
-    background: #FBE3D9;
-    border: none;
-    font-size: 17px;
-    border-radius: 10px;
-    padding: 10px 40px 10px 40px;
+.btn{
+    color: #5C5D60;
 }
 
 /* contactoviaemail.html */
